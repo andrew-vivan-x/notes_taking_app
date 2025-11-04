@@ -1,0 +1,59 @@
+# ROOT (Monorepo)
+node_modules/
+.env
+.env.local
+.env.*.local
+*.env
+*.log
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-data/
+volumes/
+*.tar
+
+# FRONTEND (Next.js + TypeScript)
+frontend/.next/
+frontend/out/
+frontend/dist/
+frontend/build/
+frontend/node_modules/
+frontend/.pnp/
+frontend/.pnp.js
+frontend/pnpm-lock.yaml
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.vercel/
+
+# Tailwind / CSS maps
+frontend/**/*.css.map
+
+# BACKEND (FastAPI + Python)
+backend/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/**/*.pyd
+backend/.pytest_cache/
+backend/.cache/
+backend/instance/
+backend/*.db
+
+# Python virtual envs
+backend/venv/
+backend/env/
+backend/.venv/
+
+# Alembic
+backend/alembic/__pycache__/
+backend/alembic/versions/*.pyc
+
+# MYSQL DATA
+mysql_data/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
